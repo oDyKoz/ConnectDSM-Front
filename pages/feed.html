@@ -1,64 +1,310 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">    
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../css/style.css">
+    <!-- Paginas de estilização -->
+    <link rel="stylesheet" href="../css/styleAll.css">
+    <link rel="stylesheet" href="../css/stylePageFeed.css">
+
     <link rel="shortcut icon" href="../assets/icon/favicon.ico" type="image/x-icon">
 
     <title>Feed | Connect</title>
-    
+
     <!-- Frameworks -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 </head>
 <!-- Nav Fixo -->
-<nav id="nav-between">
+<nav class="nav-between">
 
-        <!-- Icone reciclavel -->
-        <section class="flex justify-start items-center gap-3 pl-5">
-            <div>
-                <img src="../assets/icon/Icone.svg" alt="Icone do aplicativo" class="size-img-icon">
-            </div>
-            <div class="hidden md:flex gap-2">
-                <img src="../assets/icon/search.svg" class="w-4"></img>
-                <input id="input-search" type="text" name="search" placeholder="Research...">
-            </div>
-        </section>
-        <!-- Lista de opções -->
-        <section class="flex justify-end items-center pr-10 gap-5 lg:gap-20">
-            <div class="hidden md:flex">
-                <ul class="flex flex-row gap-2 sm:gap-5 lg:gap-17">
-                    <li class="p-5"><a href="#" class="flex flex-row items-center gap-1"><img class="w-5" src="../assets/icon/work.svg">Vagas</a></li>
-                    <li class="p-5"><a href="#" class="flex flex-row items-center gap-1"><img class="w-5" src="../assets/icon/award.svg">Portfolios</a></li>
-                    <li class="p-5"><a href="#" class="flex flex-row items-center gap-1"><img class="w-5" src="../assets/icon/shine-2.svg">Rede</a></li>
-                </ul>
-            </div>
-            <div class="flex size-8 justify-end items-center">
-                <img src="../assets/img/IconeUsuario.png" alt="">
-            </div>
-        </section>
+    <!-- Icone reciclavel - Icone do Projeto -->
+    <section class="flex justify-start items-center gap-3 pl-5">
+        <div>
+            <img src="../assets/icon/Icone.svg" alt="Icone do aplicativo" class="size-img-icon">
+        </div>
+        <div class="hidden md:flex gap-2">
+            <a href="../pages/search.html"><img src="../assets/icon/search.svg" class="w-4"></img></a>
+            <input class="inputSearch" type="text" name="search" placeholder="Research...">
+        </div>
+    </section>
+    <!-- Lista de opções -->
+    <section class="flex justify-end items-center pr-10 gap-5 lg:gap-20">
+        <div class="hidden md:flex">
+            <ul class="flex flex-row gap-2 sm:gap-4 lg:gap-17">
+                <li class="p-5">
+                    <a href="../pages/jobs.html" class="flex flex-row items-center gap-1">
+                        <img class="w-5" src="../assets/icon/work.svg">Vagas
+                    </a>
+                </li>
+                <li class="p-5">
+                    <a href="../pages/network.html" class="flex flex-row items-center gap-1">
+                        <img class="w-5" src="../assets/icon/award.svg">Portfolios
+                    </a>
+                </li>
+                <li class="p-5">
+                    <a href="../pages/talents.html" class="flex flex-row items-center gap-1">
+                        <img class="w-5" src="../assets/icon/shine-2.svg">Rede
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Icone do Perfil -->
+        <div class="flex size-8 justify-end items-center">
+            <img src="../assets/img/IconeUsuario.png" alt="">
+        </div>
+    </section>
 </nav>
 <!-- Menu Inferior - Mobile -->
-<section class="flex md:hidden w-8" id="menu-mobile">
-    <img src="../assets/icon/work.svg" alt="work" class="img-menu p-5 w-12">
-    <img src="../assets/icon/shine-2.svg" alt="network" class="img-menu p-5 w-12">
-    <img src="../assets/icon/search.svg" alt="search" class="img-menu p-5 w-12">
+<section class="flex md:hidden w-8 menuMobile">
+    <div id="menuBodyMobileFeed">
+        <a href="../pages/talents.html"><img src="../assets/icon/award.svg" alt="" class="imgMenu p-5 w-12"></a>
+        <a href="../pages/network.html"><img src="../assets/icon/shine-2.svg" alt="network" class="imgMenu p-5 w-12"></a>
+        <a href="../pages/jobs.html"><img src="../assets/icon/work.svg" alt="work" class="imgMenu p-5 w-12"></a>
+        <a href="../pages/search.html"><img src="../assets/icon/search.svg" alt="search" class="imgMenu p-5 w-12"></a>
+    </div>
 </section>
-    
-<body>
-    <main class="flex flex-col mx-30-main gap-20 pt-50">
-        <h1> Seja bem vindo </h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae saepe veritatis fugiat voluptates minus eaque? Mollitia dicta quod qui illum impedit libero ducimus voluptatum nesciunt alias. Corrupti id beatae mollitia?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias et hic officia ea ad molestiae assumenda mollitia, totam veniam minus unde eos quibusdam facilis odit eligendi dolore? Est, totam laboriosam!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia iusto totam velit, dignissimos et minus soluta nostrum aliquam itaque nisi vitae pariatur quos quis eum fugit vero dolor repellendus sit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus blanditiis amet vel ullam commodi cupiditate saepe distinctio iusto iste velit laborum, quibusdam molestiae culpa facilis assumenda eos. Nostrum, voluptas a!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti necessitatibus eos porro rem consequatur eius dolores! Officia esse inventore est labore, cum laboriosam tenetur praesentium voluptates quis maiores ducimus culpa!</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore veniam, molestias velit, possimus culpa nesciunt aliquid, error aut consequatur id est dolore eaque blanditiis placeat adipisci animi. Ex, dolor odio.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus neque quidem amet ea nam molestiae corrupti ullam, quos voluptatibus, quae provident similique magni accusantium quaerat, quo officiis esse aliquam harum?</p>
+
+<body class="bg-sky-50">
+    <main class="flex flex-row gap-10 xl:gap-20 borderMain pt-50 h-100" id="main-body">
+
+        <!-- Sugestões de Amizade e Vagas -->
+        <div class="hidden md:grid grid-rows-2 gap-5">
+            <h2 class="absolute" id="tituloSeccaoFriend"><strong>Sugestões de Amizade</strong></h2>
+            <div class="modal bg-zinc-100 rounded-md w-60">
+                <section class="hidden md:flex flex-col gap-2" id="scrollSuggestions">
+                    <div class="modal bg-zinc-200 rounded-sm">
+                        <div class="flex flex-row gap-28">
+                            <img src="../assets/img/IconeUsuario.png" class="w-10 bg-sky-50 p-5 rounded-full">
+                            <button class="buttomAddFrind rounded-full">
+                                <img src="../assets/icon/add.svg" class="size-6">
+                            </button>
+                        </div>
+                        <div>
+                            <h2 class="text-[12px] left-10
+                            bottom-5">Dymas Felipe A. R. dos Santos</h2>
+                            <p class="text-[10px] left-10 bottom-2">Cursando -
+                                <span>
+                                    Desenvolvimento de
+                                    Software Multiplataformas
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal bg-zinc-200 rounded-sm">
+                        <div class="flex flex-row gap-28">
+                            <img src="../assets/img/IconeUsuario.png" class="w-10 bg-sky-50 p-5 rounded-full">
+                            <button class="buttomAddFrind rounded-full">
+                                <img src="../assets/icon/add.svg" class="size-6">
+                            </button>
+                        </div>
+                        <div>
+                            <h2 class="text-[12px] left-10
+                            bottom-5">Dymas Felipe A. R. dos Santos</h2>
+                            <p class="text-[10px] left-10 bottom-2">Cursando - <span class="">Desenvolvimento de
+                                    Software Multiplataformas</span></p>
+                        </div>
+                    </div>
+                    <div class="modal bg-zinc-200 rounded-sm">
+                        <div class="flex flex-row gap-28">
+                            <img src="../assets/img/IconeUsuario.png" class="w-10 bg-sky-50 p-5 rounded-full">
+                            <button class="buttomAddFrind rounded-full">
+                                <img src="../assets/icon/add.svg" class="size-6">
+                            </button>
+                        </div>
+                        <div>
+                            <h2 class="text-[12px] left-10
+                            bottom-5">Dymas Felipe A. R. dos Santos</h2>
+                            <p class="text-[10px] left-10 bottom-2">Cursando - <span class="">Desenvolvimento de
+                                    Software Multiplataformas</span></p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <h2 class="absolute" id="tituloSeccaoVagas"><strong>Sugestões de Vagas</strong></h2>
+            <div class="modal bg-zinc-100 rounded-md w-60">
+                <section class="hidden md:flex flex-col gap-2" id="scrollSuggestions">
+                    <div class="modal bg-zinc-200 rounded-sm">
+                        <img src="../assets/img/IconeUsuario.png" class="w-10 bg-sky-50 p-5 rounded-full">
+                        <div>
+                            <h2 class="text-[12px] left-10
+                            bottom-5">Empresa X</h2>
+                            <div class="grid grid-cols-2 gap-12">
+                                <p class="text-[10px]">Marília - SP</p>
+                                <button class="buttomInfoVaga text-[11px]"><strong>Saiba mais</strong></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal bg-zinc-200 rounded-sm">
+                        <img src="../assets/img/IconeUsuario.png" class="w-10 bg-sky-50 p-5 rounded-full">
+                        <div>
+                            <h2 class="text-[12px] left-10
+                            bottom-5">Empresa Y</h2>
+                            <div class="grid grid-cols-2 gap-12">
+                                <p class="text-[10px]">Marília - SP</p>
+                                <button class="buttomInfoVaga text-[11px]"><strong>Saiba mais</strong></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal bg-zinc-200 rounded-sm">
+                        <img src="../assets/img/IconeUsuario.png" class="w-10 bg-sky-50 p-5 rounded-full">
+                        <div>
+                            <h2 class="text-[12px] left-10
+                            bottom-5">Empresa Z</h2>
+                            <div class="grid grid-cols-2 gap-12">
+                                <p class="text-[10px]">Marília - SP</p>
+                                <button class="buttomInfoVaga text-[11px]"><strong>Saiba mais</strong></button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- Main de Publicações -->
+        <div class="modal bg-zinc-100 rounded-md" id="bodyFeed">
+            <!-- Corpo da Postagem -->
+            <section class="modal rounded-sm bg-white">
+                <!-- Cabeçalho -->
+                <div class="headerPost justify-start">
+                    <img src="../assets/img/IconeUsuario.png" class="imgPerfilPost">
+                    <div>
+                        <h2 class="text-[12px] left-10
+                        bottom-5">Dymas Felipe A. R. dos Santos</h2>
+                        <p class="text-[10px] left-10 bottom-2">Cursando - <span class="">Desenvolvimento de Software
+                                Multiplataformas</span></p>
+                    </div>
+                </div>
+                <!-- Rotapé -->
+                <div class="bodyPosection">
+                    <div class="spacer"></div>
+                    <div class="flex justify-center">
+                        <img src="../assets/img/500x400.svg" class="inline-full max-inline-96 min-inline-48">
+                    </div>
+                </div>
+            </section>
+            <!-- Corpo da Postagem -->
+            <section class="modal rounded-sm bg-white">
+                <!-- Cabeçalho -->
+                <div class="headerPost justify-start">
+                    <img src="../assets/img/IconeUsuario.png" class="imgPerfilPost">
+                    <div>
+                        <h2 class="text-[12px] left-10
+                        bottom-5">Dymas Felipe A. R. dos Santos</h2>
+                        <p class="text-[10px] left-10 bottom-2">Cursando - <span class="">Desenvolvimento de Software
+                                Multiplataformas</span></p>
+                    </div>
+                </div>
+                <!-- Rotapé -->
+                <div class="bodyPosection">
+                    <div class="spacer"></div>
+                    <div class="flex justify-center">
+                        <img src="../assets/img/500x400.svg" class="inline-full max-inline-96 min-inline-48">
+                    </div>
+                </div>
+            </section>
+            <!-- Corpo da Postagem -->
+            <section class="modal rounded-sm bg-white">
+                <!-- Cabeçalho -->
+                <div class="headerPost justify-start">
+                    <img src="../assets/img/IconeUsuario.png" class="imgPerfilPost">
+                    <div>
+                        <h2 class="text-[12px] left-10
+                        bottom-5">Dymas Felipe A. R. dos Santos</h2>
+                        <p class="text-[10px] left-10 bottom-2">Cursando - <span class="">Desenvolvimento de Software
+                                Multiplataformas</span></p>
+                    </div>
+                </div>
+                <!-- Rotapé -->
+                <div class="bodyPosection">
+                    <div class="spacer"></div>
+                    <div class="flex justify-center">
+                        <img src="../assets/img/500x400.svg" class="inline-full max-inline-96 min-inline-48">
+                    </div>
+                </div>
+            </section>
+            <!-- Corpo da Postagem -->
+            <section class="modal rounded-sm bg-white">
+                <!-- Cabeçalho -->
+                <div class="headerPost justify-start">
+                    <img src="../assets/img/IconeUsuario.png" class="imgPerfilPost">
+                    <div>
+                        <h2 class="text-[12px] left-10
+                        bottom-5">Dymas Felipe A. R. dos Santos</h2>
+                        <p class="text-[10px] left-10 bottom-2">Cursando - <span class="">Desenvolvimento de Software
+                                Multiplataformas</span></p>
+                    </div>
+                </div>
+                <!-- Rotapé -->
+                <div class="bodyPosection">
+                    <div class="spacer"></div>
+                    <div class="flex justify-center">
+                        <img src="../assets/img/500x400.svg" class="inline-full max-inline-96 min-inline-48">
+                    </div>
+                </div>
+            </section>
+            <!-- Corpo da Postagem -->
+            <section class="modal rounded-sm bg-white">
+                <!-- Cabeçalho -->
+                <div class="headerPost justify-start">
+                    <img src="../assets/img/IconeUsuario.png" class="imgPerfilPost">
+                    <div>
+                        <h2 class="text-[12px] left-10
+                        bottom-5">Dymas Felipe A. R. dos Santos</h2>
+                        <p class="text-[10px] left-10 bottom-2">Cursando - <span class="">Desenvolvimento de Software
+                                Multiplataformas</span></p>
+                    </div>
+                </div>
+                <!-- Rotapé -->
+                <div class="bodyPosection">
+                    <div class="spacer"></div>
+                    <div class="flex justify-center">
+                        <img src="../assets/img/500x400.svg" class="inline-full max-inline-96 min-inline-48">
+                    </div>
+                </div>
+            </section>
+            <!-- Corpo da Postagem -->
+            <section class="modal rounded-sm bg-white">
+                <!-- Cabeçalho -->
+                <div class="headerPost justify-start">
+                    <img src="../assets/img/IconeUsuario.png" class="imgPerfilPost">
+                    <div>
+                        <h2 class="text-[12px] left-10
+                        bottom-5">Dymas Felipe A. R. dos Santos</h2>
+                        <p class="text-[10px] left-10 bottom-2">Cursando - <span class="">Desenvolvimento de Software
+                                Multiplataformas</span></p>
+                    </div>
+                </div>
+                <!-- Rotapé -->
+                <div class="bodyPosection">
+                    <div class="spacer"></div>
+                    <div class="flex justify-center">
+                        <img src="../assets/img/500x400.svg" class="inline-full max-inline-96 min-inline-48">
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Previa do Perfil -->
+        <section id="bodyPrev">
+            <div class="hidden lg:flex flex-col modal bg-zinc-100 rounded-md w-60">
+                <div id="bgPrevPerfil">
+                    <div class="inline relative left-15 top-3">
+                        <img src="../assets/img/IconeUsuario.png" class="w-20 h-20 bg-[#ffffff] p-5 rounded-full">
+                    </div>
+                </div>
+                <h2 class="pt-10 text-[15px]">Dymas Felipe Antunes Ribeiro dos Santos</h2>
+                <p class="text-[12px]">Cursando - <span>Desenvolvimento de Software
+                        Multiplataformas</span>
+                </p>
+            </div>
+        </section>
     </main>
 
 
 </body>
+
 </html>

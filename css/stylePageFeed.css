@@ -1,0 +1,56 @@
+/* ESTILO PARA PAGINA FEED */
+
+#menuBodyMobileFeed {
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    bottom: 10px;
+    gap: 55px;
+    left: 15%;
+}
+
+#bodyFeed {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 490px;
+    width: 580px;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    #bodyFeed {
+        height: 830px;
+    }
+}
+
+#scrollSuggestions {
+    height: 135px;
+    width: 207px;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+#tituloSeccaoFriend {
+    display: flex;
+    top: 13.7%;
+}
+
+#tituloSeccaoVagas {
+    display: flex;
+    bottom: 51.5%;
+}
+
+#bgPrevPerfil {
+    height: 80px;
+    width: 205px;
+    border-radius: 5px;
+    background-color: #A2DCF2;
+}
