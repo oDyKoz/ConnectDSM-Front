@@ -3,6 +3,11 @@
    padding: 0;
 }
 
+
+*, *:before, *:after {
+   box-sizing: inherit;
+}
+
 /* 
    Classes reciclaveis 
    Obs: Não consegui usar algumas classes do
@@ -15,6 +20,7 @@
 .p-15 { padding: 15px; }
 
 .pt-10 { padding-top: 10px; }
+.pt-20 { padding-top: 20px; }
 .pt-40 { padding-top: 40px; }
 .pt-30 { padding-top: 30px; }
 .pt-50 { padding-top: 50px; }
@@ -40,15 +46,16 @@
 /* Margins */
 
 /* Margin especifico para a tag main */
+
 .borderMain {
-   margin-right: 60px;
-   margin-left: 60px;
+   margin-right: 10vh;
+   margin-left: 5vh;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 1000px) {
    .borderMain {
-      margin-right: 0px;
-      margin-left: 40px;
+      margin-right: 0vh;
+      margin-left: 5vh;
    }
 }
 
@@ -94,12 +101,11 @@
    height: 40px;
    bottom: 0.1px;
    width: 100%;
-   gap: 50px;
    z-index: 999;
    background-color: #A2DCF2;
 }
 
-@media (min-width: 750px) {
+@media (min-width: 768px) {
    .menuMobile {
       display: none;
    }
@@ -135,13 +141,7 @@
 }
 
 .spacer {
-   margin: 10px 0px 10px 0px;
-   border: 1px solid;
-}
-
-.spacerHorizontal {
-   border: solid 0.1px;
-   margin: 3px 0px 3px 12px;
+   margin: 5px 0px 5px 0px;
 }
 
 .buttomInfoVaga {
@@ -152,13 +152,3 @@
    background-color: #A2DCF2;
 }
 
-.buttomAddFrind {
-   display: flex;
-   height: 25px;
-   cursor: pointer;
-   background-color: #A2DCF2;
-
-   img {
-      width: 23px;
-   }
-}

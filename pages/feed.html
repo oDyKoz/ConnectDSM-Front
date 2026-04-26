@@ -59,28 +59,28 @@
     </section>
 </nav>
 <!-- Menu Inferior - Mobile -->
-<section class="flex md:hidden w-8 menuMobile">
+<section class="flex md:hidden menuMobile">
     <div id="menuBodyMobileFeed">
-        <a href="../pages/talents.html"><img src="../assets/icon/award.svg" alt="" class="imgMenu p-5 w-12"></a>
-        <a href="../pages/network.html"><img src="../assets/icon/shine-2.svg" alt="network" class="imgMenu p-5 w-12"></a>
-        <a href="../pages/jobs.html"><img src="../assets/icon/work.svg" alt="work" class="imgMenu p-5 w-12"></a>
-        <a href="../pages/search.html"><img src="../assets/icon/search.svg" alt="search" class="imgMenu p-5 w-12"></a>
+        <a href="../pages/talents.html"><img src="../assets/icon/award.svg" alt="" class="imgMenu p-5"></a>
+        <a href="../pages/network.html"><img src="../assets/icon/shine-2.svg" alt="network" class="imgMenu p-5"></a>
+        <a href="../pages/jobs.html"><img src="../assets/icon/work.svg" alt="work" class="imgMenu p-5"></a>
+        <a href="../pages/search.html"><img src="../assets/icon/search.svg" alt="search" class="imgMenu p-5 "></a>
     </div>
 </section>
 
 <body class="bg-sky-50">
-    <main class="flex flex-row gap-10 xl:gap-20 borderMain pt-50 h-100" id="main-body">
+    <main class="gap-10 xl:gap-20 borderMain" id="mainBody">
 
         <!-- Sugestões de Amizade e Vagas -->
-        <div class="hidden md:grid grid-rows-2 gap-5">
-            <h2 class="absolute" id="tituloSeccaoFriend"><strong>Sugestões de Amizade</strong></h2>
-            <div class="modal bg-zinc-100 rounded-md w-60">
+        <div id="bodySuggestions">
+            <h2 id="tituloSeccaoFriend"><strong>Sugestões de Amizade</strong></h2>
+            <div class="modal bg-zinc-100 rounded-md">
                 <section class="hidden md:flex flex-col gap-2" id="scrollSuggestions">
                     <div class="modal bg-zinc-200 rounded-sm">
-                        <div class="flex flex-row gap-28">
+                        <div class="flex flex-row justify-between">
                             <img src="../assets/img/IconeUsuario.png" class="w-10 bg-sky-50 p-5 rounded-full">
                             <button class="buttomAddFrind rounded-full">
-                                <img src="../assets/icon/add.svg" class="size-6">
+                                <img src="../assets/icon/add.svg">
                             </button>
                         </div>
                         <div>
@@ -95,38 +95,46 @@
                         </div>
                     </div>
                     <div class="modal bg-zinc-200 rounded-sm">
-                        <div class="flex flex-row gap-28">
+                        <div class="flex flex-row justify-between">
                             <img src="../assets/img/IconeUsuario.png" class="w-10 bg-sky-50 p-5 rounded-full">
                             <button class="buttomAddFrind rounded-full">
-                                <img src="../assets/icon/add.svg" class="size-6">
+                                <img src="../assets/icon/add.svg">
                             </button>
                         </div>
                         <div>
                             <h2 class="text-[12px] left-10
                             bottom-5">Dymas Felipe A. R. dos Santos</h2>
-                            <p class="text-[10px] left-10 bottom-2">Cursando - <span class="">Desenvolvimento de
-                                    Software Multiplataformas</span></p>
+                            <p class="text-[10px] left-10 bottom-2">Cursando -
+                                <span>
+                                    Desenvolvimento de
+                                    Software Multiplataformas
+                                </span>
+                            </p>
                         </div>
                     </div>
                     <div class="modal bg-zinc-200 rounded-sm">
-                        <div class="flex flex-row gap-28">
+                        <div class="flex flex-row justify-between">
                             <img src="../assets/img/IconeUsuario.png" class="w-10 bg-sky-50 p-5 rounded-full">
                             <button class="buttomAddFrind rounded-full">
-                                <img src="../assets/icon/add.svg" class="size-6">
+                                <img src="../assets/icon/add.svg">
                             </button>
                         </div>
                         <div>
                             <h2 class="text-[12px] left-10
                             bottom-5">Dymas Felipe A. R. dos Santos</h2>
-                            <p class="text-[10px] left-10 bottom-2">Cursando - <span class="">Desenvolvimento de
-                                    Software Multiplataformas</span></p>
+                            <p class="text-[10px] left-10 bottom-2">Cursando -
+                                <span>
+                                    Desenvolvimento de
+                                    Software Multiplataformas
+                                </span>
+                            </p>
                         </div>
                     </div>
                 </section>
             </div>
-            <h2 class="absolute" id="tituloSeccaoVagas"><strong>Sugestões de Vagas</strong></h2>
+            <h2 id="tituloSeccaoVagas"><strong>Sugestões de Vagas</strong></h2>
             <div class="modal bg-zinc-100 rounded-md w-60">
-                <section class="hidden md:flex flex-col gap-2" id="scrollSuggestions">
+                <div class="hidden md:flex flex-col gap-2" id="scrollSuggestions">
                     <div class="modal bg-zinc-200 rounded-sm">
                         <img src="../assets/img/IconeUsuario.png" class="w-10 bg-sky-50 p-5 rounded-full">
                         <div>
@@ -160,7 +168,7 @@
                             </div>
                         </div>
                     </div>
-                </section>
+                </div>
             </div>
         </div>
 
@@ -169,18 +177,25 @@
             <!-- Corpo da Postagem -->
             <section class="modal rounded-sm bg-white">
                 <!-- Cabeçalho -->
-                <div class="headerPost justify-start">
-                    <img src="../assets/img/IconeUsuario.png" class="imgPerfilPost">
-                    <div>
-                        <h2 class="text-[12px] left-10
-                        bottom-5">Dymas Felipe A. R. dos Santos</h2>
-                        <p class="text-[10px] left-10 bottom-2">Cursando - <span class="">Desenvolvimento de Software
-                                Multiplataformas</span></p>
+                <div class="flex justify-between">
+                    <!-- Perfil e Nome -->
+                    <div class="flex flex-row" id="bodyPerfil">
+                        <img src="../assets/img/IconeUsuario.png" class="imgPerfilPost">
+                        <div>
+                            <h2 class="text-[12px] left-10
+                            bottom-5">Dymas Felipe A. R. dos Santos</h2>
+                            <p class="text-[10px] left-10 bottom-2">Cursando - <span class="">Desenvolvimento de Software
+                                    Multiplataformas</span></p>
+                        </div>
                     </div>
+                    <!-- Opções -->
+                     <div id="bodyMenuPerfil">
+                        <img src="../assets/icon/moreVertical.svg" alt="menuVertical" class="w-[15px]">
+                     </div>
                 </div>
                 <!-- Rotapé -->
                 <div class="bodyPosection">
-                    <div class="spacer"></div>
+                    <hr class="spacer">
                     <div class="flex justify-center">
                         <img src="../assets/img/500x400.svg" class="inline-full max-inline-96 min-inline-48">
                     </div>
@@ -189,18 +204,25 @@
             <!-- Corpo da Postagem -->
             <section class="modal rounded-sm bg-white">
                 <!-- Cabeçalho -->
-                <div class="headerPost justify-start">
-                    <img src="../assets/img/IconeUsuario.png" class="imgPerfilPost">
-                    <div>
-                        <h2 class="text-[12px] left-10
-                        bottom-5">Dymas Felipe A. R. dos Santos</h2>
-                        <p class="text-[10px] left-10 bottom-2">Cursando - <span class="">Desenvolvimento de Software
-                                Multiplataformas</span></p>
+                <div class="flex justify-between">
+                    <!-- Perfil e Nome -->
+                    <div class="flex flex-row" id="bodyPerfil">
+                        <img src="../assets/img/IconeUsuario.png" class="imgPerfilPost">
+                        <div>
+                            <h2 class="text-[12px] left-10
+                            bottom-5">Dymas Felipe A. R. dos Santos</h2>
+                            <p class="text-[10px] left-10 bottom-2">Cursando - <span class="">Desenvolvimento de Software
+                                    Multiplataformas</span></p>
+                        </div>
                     </div>
+                    <!-- Opções -->
+                     <div id="bodyMenuPerfil">
+                        <img src="../assets/icon/moreVertical.svg" alt="menuVertical" class="w-[15px]">
+                     </div>
                 </div>
                 <!-- Rotapé -->
                 <div class="bodyPosection">
-                    <div class="spacer"></div>
+                    <hr class="spacer">
                     <div class="flex justify-center">
                         <img src="../assets/img/500x400.svg" class="inline-full max-inline-96 min-inline-48">
                     </div>
@@ -209,18 +231,25 @@
             <!-- Corpo da Postagem -->
             <section class="modal rounded-sm bg-white">
                 <!-- Cabeçalho -->
-                <div class="headerPost justify-start">
-                    <img src="../assets/img/IconeUsuario.png" class="imgPerfilPost">
-                    <div>
-                        <h2 class="text-[12px] left-10
-                        bottom-5">Dymas Felipe A. R. dos Santos</h2>
-                        <p class="text-[10px] left-10 bottom-2">Cursando - <span class="">Desenvolvimento de Software
-                                Multiplataformas</span></p>
+                <div class="flex justify-between">
+                    <!-- Perfil e Nome -->
+                    <div class="flex flex-row" id="bodyPerfil">
+                        <img src="../assets/img/IconeUsuario.png" class="imgPerfilPost">
+                        <div>
+                            <h2 class="text-[12px] left-10
+                            bottom-5">Dymas Felipe A. R. dos Santos</h2>
+                            <p class="text-[10px] left-10 bottom-2">Cursando - <span class="">Desenvolvimento de Software
+                                    Multiplataformas</span></p>
+                        </div>
                     </div>
+                    <!-- Opções -->
+                     <div id="bodyMenuPerfil">
+                        <img src="../assets/icon/moreVertical.svg" alt="menuVertical" class="w-[15px]">
+                     </div>
                 </div>
                 <!-- Rotapé -->
                 <div class="bodyPosection">
-                    <div class="spacer"></div>
+                    <hr class="spacer">
                     <div class="flex justify-center">
                         <img src="../assets/img/500x400.svg" class="inline-full max-inline-96 min-inline-48">
                     </div>
@@ -229,58 +258,25 @@
             <!-- Corpo da Postagem -->
             <section class="modal rounded-sm bg-white">
                 <!-- Cabeçalho -->
-                <div class="headerPost justify-start">
-                    <img src="../assets/img/IconeUsuario.png" class="imgPerfilPost">
-                    <div>
-                        <h2 class="text-[12px] left-10
-                        bottom-5">Dymas Felipe A. R. dos Santos</h2>
-                        <p class="text-[10px] left-10 bottom-2">Cursando - <span class="">Desenvolvimento de Software
-                                Multiplataformas</span></p>
+                <div class="flex justify-between">
+                    <!-- Perfil e Nome -->
+                    <div class="flex flex-row" id="bodyPerfil">
+                        <img src="../assets/img/IconeUsuario.png" class="imgPerfilPost">
+                        <div>
+                            <h2 class="text-[12px] left-10
+                            bottom-5">Dymas Felipe A. R. dos Santos</h2>
+                            <p class="text-[10px] left-10 bottom-2">Cursando - <span class="">Desenvolvimento de Software
+                                    Multiplataformas</span></p>
+                        </div>
                     </div>
+                    <!-- Opções -->
+                     <div id="bodyMenuPerfil">
+                        <img src="../assets/icon/moreVertical.svg" alt="menuVertical" class="w-[15px]">
+                     </div>
                 </div>
                 <!-- Rotapé -->
                 <div class="bodyPosection">
-                    <div class="spacer"></div>
-                    <div class="flex justify-center">
-                        <img src="../assets/img/500x400.svg" class="inline-full max-inline-96 min-inline-48">
-                    </div>
-                </div>
-            </section>
-            <!-- Corpo da Postagem -->
-            <section class="modal rounded-sm bg-white">
-                <!-- Cabeçalho -->
-                <div class="headerPost justify-start">
-                    <img src="../assets/img/IconeUsuario.png" class="imgPerfilPost">
-                    <div>
-                        <h2 class="text-[12px] left-10
-                        bottom-5">Dymas Felipe A. R. dos Santos</h2>
-                        <p class="text-[10px] left-10 bottom-2">Cursando - <span class="">Desenvolvimento de Software
-                                Multiplataformas</span></p>
-                    </div>
-                </div>
-                <!-- Rotapé -->
-                <div class="bodyPosection">
-                    <div class="spacer"></div>
-                    <div class="flex justify-center">
-                        <img src="../assets/img/500x400.svg" class="inline-full max-inline-96 min-inline-48">
-                    </div>
-                </div>
-            </section>
-            <!-- Corpo da Postagem -->
-            <section class="modal rounded-sm bg-white">
-                <!-- Cabeçalho -->
-                <div class="headerPost justify-start">
-                    <img src="../assets/img/IconeUsuario.png" class="imgPerfilPost">
-                    <div>
-                        <h2 class="text-[12px] left-10
-                        bottom-5">Dymas Felipe A. R. dos Santos</h2>
-                        <p class="text-[10px] left-10 bottom-2">Cursando - <span class="">Desenvolvimento de Software
-                                Multiplataformas</span></p>
-                    </div>
-                </div>
-                <!-- Rotapé -->
-                <div class="bodyPosection">
-                    <div class="spacer"></div>
+                    <hr class="spacer">
                     <div class="flex justify-center">
                         <img src="../assets/img/500x400.svg" class="inline-full max-inline-96 min-inline-48">
                     </div>

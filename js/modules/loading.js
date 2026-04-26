@@ -1,4 +1,4 @@
-export function setTimeout (() => {
+setTimeout (() => {
     
     window.location.href = "./pages/login.html";
 
