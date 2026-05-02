@@ -81,7 +81,6 @@
 /* Este bloco defini a fixação do nav no topo da tela */
 .nav-between {
    display: flex;
-   background-color: rgb(255, 255, 255);
    border-color: black;
    justify-content: space-between;
    position: sticky;
