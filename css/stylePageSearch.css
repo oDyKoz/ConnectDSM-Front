@@ -27,12 +27,12 @@
     left: 15%;
 }
 
-#bodyFeedSearch {
+.bodyFeedSearch {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    height: 490px;
-    width: 50%;
+    max-height: 150px;
+    max-width: 80vh;
     overflow-y: scroll;
 
     &::-webkit-scrollbar {
@@ -40,10 +40,16 @@
     }
 }
 
-@media (max-width: 750px) {
-    #bodyFeedSearch {
-        height: 790px;
-        width: 98%;
+.bodyFeedPerfisSearch {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 150px;
+    max-width: 80vh;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+        display: none;
     }
 }
 
