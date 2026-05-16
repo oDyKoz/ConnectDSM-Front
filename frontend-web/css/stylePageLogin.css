@@ -1,0 +1,49 @@
+.textColor_002F88 { color: #002F88; }
+.textColor_1F6FFE { color: #1F6FFE; }
+
+
+.illustrationBodyLogin {
+    display: flex;
+    padding-top: 60px;
+    width: 30%;
+}
+
+.subNav {
+    color: #002F88;
+    margin-left: 70px;
+}
+
+@media (max-width: 850px) {
+    .illustrationBodyLogin {
+        display: none;
+    }    
+}
+
+.illustrationContentLogin {
+    margin-top: 30px;
+}
+
+.illustrationContentLoginAluno {
+    margin-top: 40px;
+    height: 70%;
+    width: 70%;
+}
+
+.contentCadastro {
+    display: flex;
+    border: solid 0.5px rgba(0, 0, 0, 0.200);
+    border-radius: 15px;
+    padding: 30px 60px 30px 60px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.btnOpcao {
+    cursor: pointer;
+}
+
+#btnLoginAluno, #btnLoginEmpresa {
+    position: absolute;
+}
+
+
