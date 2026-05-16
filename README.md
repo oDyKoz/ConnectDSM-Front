@@ -1,6 +1,6 @@
 #### Projeto - ConnectDSMers - Rede Social para Profissionais
 
-Este projeto é baseado em uma necessidade de estudantes, construido e pensado para incluir pessoas de todas as idades e PcD.
+Este projeto é baseado em uma necessidade de estudantes, construido e pensado para incluir pessoas de todas as idades.
 
 ## Funcionalidades
 
