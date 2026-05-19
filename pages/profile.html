@@ -3,9 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/styleAll.css">
+    <link rel="stylesheet" href="../css/styleProfilePage.css">
+
+    <title>Perfil | Connect</title>
+
+    <link rel="shortcut icon" href="../assets/icon/favicon.ico" type="image/x-icon">
+
+    <!-- Frameworks -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+<!-- Nav Fixo -->
+<nav class="nav-between bg-white">
+
+    <!-- Icone reciclavel - Icone do Projeto -->
+    <section class="flex justify-start items-center gap-3 pl-5">
+        <div>
+            <a href="leadpage.html"><img src="../assets/icon/Icone.svg" alt="Icone do aplicativo" class="size-img-icon"></a>
+        </div>
+        <div class="hidden md:flex gap-2">
+            <a href="../pages/search.html"><img src="../assets/icon/search.svg" class="w-4"></img></a>
+            <input class="inputSearch" type="text" name="search" placeholder="Research...">
+        </div>
+    </section>
+    <!-- Lista de opções -->
+    <section class="flex justify-end items-center pr-10 gap-5 lg:gap-20">
+        <div class="hidden md:flex">
+            <ul class="flex flex-row gap-2 sm:gap-4 lg:gap-17">
+                <li class="p-5">
+                    <a href="../pages/jobs.html" class="flex flex-row items-center gap-1">
+                        <img class="w-5" src="../assets/icon/work.svg">Vagas
+                    </a>
+                </li>
+                <li class="p-5">
+                    <a href="../pages/talents.html" class="flex flex-row items-center gap-1">
+                        <img class="w-5" src="../assets/icon/award.svg">Portfolios
+                    </a>
+                </li>
+                <li class="p-5">
+                    <a href="../pages/network.html" class="flex flex-row items-center gap-1">
+                        <img class="w-5" src="../assets/icon/shine-2.svg">Rede
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Icone do Perfil -->
+        <div class="flex size-8 justify-end items-center">
+            <img src="../assets/img/IconeUsuario.png" alt="">
+        </div>
+    </section>
+</nav>
+<!-- Menu Inferior - Mobile -->
+<section class="flex md:hidden menuMobile">
+    <div id="menuBodyMobileFeed">
+        <a href="../pages/talents.html"><img src="../assets/icon/award.svg" alt="" class="imgMenu p-5"></a>
+        <a href="../pages/network.html"><img src="../assets/icon/shine-2.svg" alt="network" class="imgMenu p-5"></a>
+        <a href="../pages/jobs.html"><img src="../assets/icon/work.svg" alt="work" class="imgMenu p-5"></a>
+        <a href="../pages/search.html"><img src="../assets/icon/search.svg" alt="search" class="imgMenu p-5 "></a>
+    </div>
+</section>
 <body>
-    
+    <!-- Corpo do Perfil -->
+    <section class="flex flex-col justify-center">
+        <div class="bodyPerfil">
+            <div class="bgPerfil"></div>
+            <div class="imgPerfil bg-[#fff] rounded-full"> <img src="../assets/img/IconeUsuario.png" alt="" class="rounded-full"></div>
+        </div>
+        <div class="bodyDescri">
+            <div class="bgDescri">
+                <div class="contentDescri">
+                    <h1>Dymas Felipe Antunes Ribeiro dos Santos</h1>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

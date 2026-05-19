@@ -1,0 +1,12 @@
+.mainNetwork {
+    display: flex;
+    gap: 50px;
+}
+
+.bodyNetworkPubli {
+    max-height: 80vh;
+}
+
+.bodyNetworkSuges {
+    max-height: 40vh;
+}

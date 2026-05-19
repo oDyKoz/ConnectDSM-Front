@@ -27,7 +27,7 @@
     }
 }
 
-#bodyFeed {
+.bodyFeed {
     display: flex;
     flex-direction: column;
     padding-top: 2vh;
