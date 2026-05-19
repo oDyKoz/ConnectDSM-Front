@@ -151,3 +151,10 @@
    background-color: #A2DCF2;
 }
 
+.scrollY {
+   overflow-y: scroll;
+
+   &::-webkit-scrollbar {
+        display: none;
+   }
+}
