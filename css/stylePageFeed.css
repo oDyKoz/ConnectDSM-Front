@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* ESTILO PARA PAGINA FEED */
 #mainBody {
     display: flex;
@@ -73,80 +72,4 @@
     height: 25px;
     cursor: pointer;
     background-color: #A2DCF2;
-=======
-/* ESTILO PARA PAGINA FEED */
-#mainBody {
-    display: flex;
-    padding-top: 4.5vh;
-    overflow: hidden;
-}
-
-#menuBodyMobileFeed {
-    display: flex;
-    position: absolute;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 80%;
-    bottom: 10px;
-    left: 9%;
-
-    img {
-        width: 45px;
-    }
-}
-
-@media (max-width:410px) {
-    #menuBodyMobileFeed {
-        img {
-            width: 35px;
-        }
-    }
-}
-
-.bodyFeed {
-    display: flex;
-    flex-direction: column;
-    padding-top: 2vh;
-    gap: 10px;
-    height: min(75vh, 750px);
-    width: 100%;
-    overflow-y: scroll;
-
-    &::-webkit-scrollbar {
-        display: none;
-    }
-}
-
-#scrollSuggestions {
-    height: 135px;
-    overflow-y: scroll;
-
-    &::-webkit-scrollbar {
-        display: none;
-    }
-}
-
-#bodySuggestions {
-    display: flex;
-    flex-direction: column;
-}
-
-@media (max-width: 770px) {
-    #bodySuggestions {
-        display: none;
-    }
-}
-
-#bgPrevPerfil {
-    width: 100%;
-    border-radius: 5px;
-    background-color: #A2DCF2;
-}
-
-.buttomAddFrind {
-    display: flex;
-    height: 25px;
-    cursor: pointer;
-    background-color: #A2DCF2;
->>>>>>> cce44a35483ae0fb505deb868e714e951fd0af71
 }
