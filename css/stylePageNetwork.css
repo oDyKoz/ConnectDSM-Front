@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .mainNetwork {
     display: flex;
     gap: 50px;
@@ -9,4 +10,17 @@
 
 .bodyNetworkSuges {
     max-height: 40vh;
+=======
+.mainNetwork {
+    display: flex;
+    gap: 50px;
+}
+
+.bodyNetworkPubli {
+    max-height: 80vh;
+}
+
+.bodyNetworkSuges {
+    max-height: 40vh;
+>>>>>>> cce44a35483ae0fb505deb868e714e951fd0af71
 }
